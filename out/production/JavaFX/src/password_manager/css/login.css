@@ -1,0 +1,29 @@
+/*Login Page CSS*/
+
+.title-desc{
+    -fx-font-size: 30px;
+    -fx-text-fill: #03A9F4;
+    -fx-font-weight: 700;
+}
+
+.login-btn {
+     -fx-font-size: 25;
+     -fx-font-weight: 700;
+    -fx-background-color: #00BCD4;
+    -fx-text-fill:  #FFFFFF;
+   -fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.4, 0.0, 0.0);
+}
+
+.login-btn:hover {
+    -fx-background-color: #00A2B8;
+    -fx-text-fill: #B2EBF2;
+    -fx-border-width: 0.4;
+    -fx-cursor:hand;
+}
+
+.login-btn:pressed {
+    -fx-background-color:  #0097A7;
+    -fx-text-fill: #004952;
+}
+
+

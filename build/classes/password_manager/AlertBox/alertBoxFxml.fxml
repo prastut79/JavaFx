@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="159.0" prefWidth="462.0" styleClass="root-pane" stylesheets="@alertBox.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="password_manager.AlertBox.AlertBoxController">
+   <children>
+      <Pane fx:id="colorPane" layoutY="-1.0" prefHeight="6.0" prefWidth="462.0" styleClass="title-pane" />
+      <JFXButton buttonType="RAISED" layoutX="161.0" layoutY="109.0" onAction="#closeDialog" prefHeight="39.0" prefWidth="140.0" ripplerFill="#1d79c5" styleClass="ok-btn" text="Okay" />
+      <Label fx:id="title" layoutX="14.0" layoutY="10.0" prefHeight="39.0" prefWidth="464.0" styleClass="title" text="Sucess!" />
+      <JFXTextArea fx:id="content" editable="false" focusColor="#cccccc" layoutX="8.0" layoutY="46.0" prefHeight="28.0" prefWidth="446.0" styleClass="content" text="Password has sucessfully been added.&#10;" unFocusColor="#cccccc" />
+   </children>
+</AnchorPane>

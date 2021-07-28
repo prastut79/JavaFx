@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackRoot" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="password_manager.Controller.MainController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorRoot" prefHeight="570.0" prefWidth="910.0" styleClass="main-window">
+         <children>
+            <Pane prefHeight="570.0" prefWidth="194.0" style="-fx-background-color: #0097A7; -fx-fill: radial-gradient(radius 100%,  #0097A7, #00BCD4, #000000); -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+               <children>
+                  <Pane fx:id="navBarActivePane" layoutY="-100.0" opacity="0.2" prefHeight="62.0" prefWidth="194.0" styleClass="active-button-pane">
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Pane>
+                  <Button layoutX="14.0" layoutY="116.0" mnemonicParsing="false" onAction="#navBarButtonClicked" prefHeight="49.0" prefWidth="163.0" styleClass="nav-add-button" text="Add New">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color green="0.5921568870544434" blue="0.6549019813537598" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.5" green="0.8333333134651184" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Notepad.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="-6.0" layoutY="205.0" mnemonicParsing="false" onAction="#navBarButtonClicked" prefHeight="62.0" prefWidth="206.0" styleClass="nav-buttons" text="   Passwords" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Create.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="-6.0" layoutY="267.0" mnemonicParsing="false" onAction="#navBarButtonClicked" prefHeight="62.0" prefWidth="206.0" styleClass="nav-buttons" text=" Generate" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="profileImage" fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/eren.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="userName" layoutX="61.0" layoutY="18.0" prefHeight="37.0" prefWidth="118.0" styleClass="user-name" text="netsos" textFill="#00fbff">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="-8.0" layoutY="81.0" prefHeight="1.0" prefWidth="206.0" style="-fx-background-color: #ccc;" />
+               </children>
+            </Pane>
+            <BorderPane fx:id="sceneBorderPane" layoutX="194.0" prefHeight="570.0" prefWidth="718.0">
+               <bottom>
+                  <Label fx:id="eventLabel" alignment="TOP_RIGHT" prefHeight="20.0" prefWidth="722.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                     <textFill>
+                        <RadialGradient centerX="0.45999993218315977" centerY="0.6145038531936762" cycleMethod="REFLECT" focusDistance="0.20560754793826663" radius="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color green="0.5921568870544434" blue="0.6549019813537598" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </bottom>
+               <center>
+                  <StackPane fx:id="stackContent" prefHeight="427.0" prefWidth="606.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <Pane fx:id="dragPane" prefHeight="31.0" prefWidth="912.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="closeButton" layoutX="873.0" layoutY="12.0" mnemonicParsing="false" onAction="#closeSystem" prefHeight="16.0" prefWidth="16.0" styleClass="window-close-button">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip graphicTextGap="2.0" text="Close" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="minimizeButton" layoutX="843.0" layoutY="12.0" mnemonicParsing="false" onAction="#minimizeSystem" prefHeight="16.0" prefWidth="16.0" styleClass="window-minimize-button">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Minimize" />
+                     </tooltip>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.6603053576163663">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+         <stylesheets>
+            <URL value="@../css/index.css" />
+            <URL value="@../css/main.css" />
+         </stylesheets>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</StackPane>

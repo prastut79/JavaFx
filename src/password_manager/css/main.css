@@ -1,0 +1,138 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*
+.dark-primary-color    { background: #0097A7; }
+.default-primary-color { background: #00BCD4; }
+.light-primary-color   { background: #B2EBF2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #03A9F4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+-fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);*/
+
+.root{
+    -fx-font-family: "Segoe UI";
+}
+
+.user-name{
+    -fx-font-size: 30;
+    -fx-font-weight: 700;
+}
+.nav-add-button{
+    -fx-font-size: 20;
+    -fx-background-color: #00BCD4;
+    -fx-text-fill:  #FFFFFF;
+   -fx-background-radius:30;
+   -fx-border-radius:30;
+   -fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.4, 0.0, 0.0);
+}
+
+.nav-add-button:hover{
+    -fx-background-color: #00A2B8;
+    -fx-text-fill: #B2EBF2;
+    -fx-border-width: 0.4;
+    -fx-cursor:hand;
+}
+
+.nav-add-button:pressed{
+    -fx-background-color:  #0097A7;
+    -fx-text-fill: #004952;
+}
+
+.nav-buttons{
+    -fx-font-size: 20;
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.nav-buttons:hover{
+    -fx-text-fill: #B2EBF2;
+}
+
+.nav-buttons:pressed{
+    -fx-text-fill: #004952;
+}
+
+.active-button-pane{
+    -fx-background-color:  #B2EBF2;
+    /*-fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);*/
+}
+
+/*.button.navAddButton{
+    	-fx-background-color:#333333;
+      -fx-border-color: #EDEDED;
+   -fx-border-width: 0.5;
+   -fx-border-radius: 2;       
+
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white; 
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 25px;
+    -fx-padding: 20 80;
+}*/
+/*
+.text-field {
+	-fx-font-family: "Quicksand";
+   -fx-font-size: 16;
+   -fx-padding: 10 15;
+
+  
+   -fx-border-color: #EDEDED;
+   -fx-border-width: 0.5;
+   -fx-border-radius: 2;
+   -fx-background-color: transparent;
+   -fx-text-fill: #BABABA;
+   
+}
+
+
+.text-field:focused {
+    -fx-border-width: 2;
+    -fx-border-color: #BABABA;
+    -fx-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+    
+}
+
+
+
+
+
+.button{
+	-fx-background-color:#333333;
+      -fx-border-color: #EDEDED;
+   -fx-border-width: 0.5;
+   -fx-border-radius: 2;       
+
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white; 
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 25px;
+    -fx-padding: 20 80;
+}
+
+
+.button:hover{
+	-fx-cursor: hand;
+	-fx-background-color:#000;
+	-fx-border-width: 1;
+    -fx-border-color: #BABABA;
+    
+	
+}
+
+
+.label{
+	-fx-font-size: 60px;
+	-fx-text-fill: #BABABA;
+	-fx-font-weight: 900;
+}
+
+
+
+*/
+
+
+
+
+
+ 

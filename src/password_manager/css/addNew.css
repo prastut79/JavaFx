@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.dark-primary-color    { background: #0097A7; }
+.default-primary-color { background: #00BCD4; }
+.light-primary-color   { background: #B2EBF2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #03A9F4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+/*-fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);*/
+
+
+
+
+.add-button{
+   -fx-font-size: 17;
+   -fx-background-color: #00BCD4;
+   -fx-text-fill:  #FFFFFF;
+   -fx-background-radius:5;
+   -fx-border-radius:5;
+   -fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.4, 0.0, 0.0);
+}
+
+.add-button:hover{
+    -fx-background-color: #00A2B8;
+    -fx-text-fill: #B2EBF2;
+    -fx-border-width: 0.4;
+    -fx-cursor:hand;
+}
+
+.add-button:pressed{
+    -fx-background-color:  #0097A7;
+    -fx-text-fill: #004952;
+}
+
+.clear-button{
+     -fx-font-size: 17;
+    -fx-background-color:  transparent;
+    -fx-text-fill:  #00BCD4;
+}
+
+.clear-button:hover{
+     -fx-cursor:hand;
+     -fx-text-fill:#004852;
+}
+
+.clear-button:pressed{
+    -fx-text-fill:  #004952;
+}
+

@@ -1,0 +1,44 @@
+
+.root{
+    -fx-font-family: "Segoe UI";
+}
+.root-pane{
+    -fx-background-radius: 5%;
+    -fx-border-radius: 5%;
+     -fx-effect : dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
+     -fx-overflow: hidden;
+     -fx-background-color: #fff;
+}
+
+.title-pane{
+    -fx-background-color: green;
+    -fx-background-radius: 5%;
+        -fx-border-radius: 5%;
+}
+
+.title{
+    -fx-font-size: 22;
+    -fx-text-fill: #03A9F4;
+    -fx-font-weight: 700;
+}
+
+.content{
+    -fx-font-size: 15;
+    -fx-text-fill: #333333;
+    -fx-border: 0 0 0 0;
+}
+
+.ok-btn{
+    -fx-font-size: 17;
+    -fx-font-weight: 700;
+    -fx-text-fill: #fff;
+    -fx-background-color: #03A9F4;
+}
+
+.ok-btn:hover{
+    -fx-cursor: hand;
+}
+
+.text-area *.text {
+    -fx-text-alignment: center;
+}

@@ -1,0 +1,76 @@
+/*CSS for all the pages*/
+
+.root{
+    -fx-font-family: "Segoe UI";
+}
+
+.main-window{
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.page{
+    -fx-background-color: #ffffff;
+}
+
+.page-title{
+    -fx-text-fill: #03A9F4;
+    -fx-text-size: 30;
+    -fx-text-weight: 700;
+}
+
+.textfield-label{
+    -fx-font-size: 15px;
+    -fx-text-fill: #00bcd4;
+    -fx-font-weight: 700;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #212121;
+    -fx-border-radius: 1;
+    -fx-padding: 1px;
+}
+
+.text-field:focused {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #00BCD4;
+    -fx-border-radius: 3;
+}
+
+.text-area{
+    -fx-font-size: 15px;
+    -fx-text-fill:  #000;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: #212121;
+    -fx-border-radius: 1;
+}
+
+.text-area:focused {
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color: #00BCD4;
+    -fx-border-radius: 3;
+}
+
+.tooltip{
+    -fx-font-size: 11;
+    -fx-background-color: #000;
+    -fx-padding: 1 6;
+}
+
+.separator *.line{
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: #03A9F4;
+}
+
+.window-close-button{
+    -fx-background-radius:100%;
+    -fx-background-color: red;
+}
+
+.window-minimize-button{
+    -fx-background-radius:100%;
+    -fx-background-color:  #90ee90;
+}
